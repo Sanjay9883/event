@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <section>
+        <div class="rectengle"></div>
+        <button id="myButton">click me</button>
+    </section>
+    <script>
+          let myButton = document.getElementById("myButton");
+         let recDiv = document.querySelector(".rectengle");
+
+         const handelMouseEvent = () => {
+            console.log("click");
+            recDiv.style.backgroundColor = "#f5ee62";
+         };
+         const handelMouseEvent2 = () => {
+            console.log("dbclick");
+            recDiv.classList.add("addtransition");
+         };
+         const handelMouseEvent3 = () => {
+           //console.log("click");
+            recDiv.classList.add("addtransition2");
+         };
+         const handelMouseEvent4 = () => {
+            //console.log("click");
+            recDiv.classList.add("addtransition3");
+         };
+         const handelMouseEvent5 = () => {
+            //console.log("click");
+            recDiv.classList.add("addtransition4");
+         };
+         const handelMouseEvent6 = () => {
+            //console.log("click");
+            recDiv.classList.add("addtransition5");
+         };
+         myButton.addEventListener("click",handelMouseEvent);
+         myButton.addEventListener("dbclick",handelMouseEvent2);
+         recDiv.addEventListener("mouseover",handelMouseEvent2);
+          recDiv.addEventListener("mouseout",handelMouseEvent3);
+           recDiv.addEventListener("mousedown",handelMouseEvent4);
+            recDiv.addEventListener("mouseup",handelMouseEvent5);
+    </script>
+</body>
+</html>

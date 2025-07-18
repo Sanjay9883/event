@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+   text-align: center;
+}
+.rectengle{
+    width: 35rem;
+    height: 35rem;
+    background-color: black;
+    box-shadow: rgb(101, 99, 99) 0px 8px 24px;
+    border-radius: 1rem;
+    margin: 4rem;
+    transition: all 0.6s linear;
+}
+.addtransition{
+   border-radius: 50%;
+}
+.addtransition2{
+   border-radius: 50%;
+   background-color: rgb(239, 239, 32);
+   translate: -30rem 0;
+}
+.addtransition3{
+   border-radius: 50%;
+   background-color: rgb(239, 239, 32);
+   translate: 30rem 0;
+}
+.addtransition4{
+   border-radius: 0%;
+   background-color: rgb(239, 239, 32);
+   translate: -10rem 0;
+}
+.addtransition5{
+   border-radius: 50%;
+   background-color: rgb(239, 239, 32);
+}
